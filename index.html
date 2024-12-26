@@ -4,53 +4,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal Website">
+  <meta name="description" content="Palantir Inspired Website">
   <meta name="author" content="Your Name">
-  <title>Your Name - Personal Website</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS for styling -->
+  <title>Palantir Inspired</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- Header Section -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main Section -->
-  <main>
-    <!-- About Me Section -->
-    <section id="about">
-      <h1>About Me</h1>
-      <p>Hello! I'm <strong>Your Name</strong>, a passionate web developer and designer. I specialize in front-end
-        technologies and enjoy creating user-friendly websites. My hobbies include photography, travel, and coding.</p>
-      <img src="your-photo.jpg" alt="Your Photo" width="300" height="300"> <!-- Replace with your photo -->
-    </section>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Transforming Data into Insights</h1>
+      <p>We enable organizations to make data-driven decisions through advanced analytics and enterprise software
+        solutions.</p>
+      <a href="#contact" class="btn-primary">Contact Us</a>
+    </div>
+  </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-      <h1>Portfolio</h1>
-      <div class="portfolio-item">
-        <img src="project1.jpg" alt="Project 1">
-        <h2>Project 1</h2>
-        <p>A description of your project.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="project2.jpg" alt="Project 2">
-        <h2>Project 2</h2>
-        <p>A description of your project.</p>
-      </div>
-      <!-- Add more portfolio items as needed -->
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Palantir-inspired solutions empower businesses with actionable insights and improve decision-making processes
+        through data.</p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h1>Contact Me</h1>
+  <!-- Solutions Section -->
+  <section id="solutions">
+    <div class="container">
+      <h2>Our Solutions</h2>
+      <div class="solution-card">
+        <h3>Data Integration</h3>
+        <p>Seamless integration of disparate data sources for better analysis.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Advanced Analytics</h3>
+        <p>Leverage machine learning and AI to derive insights from data.</p>
+      </div>
+      <div class="solution-card">
+        <h3>Data Security</h3>
+        <p>Ensure data privacy and security with our enterprise-grade solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
       <form action="submit_form.php" method="POST">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required>
@@ -58,26 +73,27 @@
         <label for="email">Your Email</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="message">Your Message</label>
+        <label for="message">Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn-primary">Send Message</button>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-    <div class="social-media">
-      <a href="https://github.com/your-username" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-      <a href="mailto:youremail@example.com">Email</a>
+    <div class="container">
+      <p>&copy; 2024 Palantir Inspired. All rights reserved.</p>
+      <div class="social-media">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+      </div>
     </div>
   </footer>
 
   <!-- Optional JavaScript -->
-  <script src="script.js"></script> <!-- Link to external JS file -->
+  <script src="script.js"></script>
 </body>
 
 </html>
