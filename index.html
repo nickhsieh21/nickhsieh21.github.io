@@ -4,96 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Palantir Inspired Website">
-  <meta name="author" content="Your Name">
-  <title>Palantir Inspired</title>
+  <title>Nick Hsieh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Header Section -->
+  <!-- Section 1: Landing Page -->
   <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <div class="landing-page">
+      <a href="#landing" class="name">Nick Hsieh</a>
+      <nav class="navbar">
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <div class="intro">
+        <h1>Hello, I'm Nick</h1>
+        <ul>
+          <li>CS @ Cornell</li>
+          <li>Trader @ BofA</li>
+        </ul>
+      </div>
+      <div class="arrow">
+        <a href="#experience">&#8595;</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Transforming Data into Insights</h1>
-      <p>We enable organizations to make data-driven decisions through advanced analytics and enterprise software
-        solutions.</p>
-      <a href="#contact" class="btn-primary">Contact Us</a>
+  <!-- Section 2: Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-entry">
+        <p class="company-name">Bank of America</p>
+        <p class="title">Trader</p>
+        <p class="date">2024 - Present</p>
+        <p class="description">Trading in the Delta One Trading desk, focusing on structured products and derivatives.
+        </p>
+      </div>
+      <div class="timeline-entry">
+        <p class="company-name">Cornell University</p>
+        <p class="title">Computer Science Student</p>
+        <p class="date">2020 - 2024</p>
+        <p class="description">Studied Computer Science with minors in Operations Research, Information Science, and
+          Data Science.</p>
+      </div>
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- Section 3: About -->
   <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Palantir-inspired solutions empower businesses with actionable insights and improve decision-making processes
-        through data.</p>
-    </div>
+    <h2>About</h2>
+    <p>I am an incoming trading analyst on the Delta One Trading desk at Bank of America and graduated from Cornell
+      University with a B.S. in Computer Science and minors in Operation Research, Information Science, and Data
+      Science.</p>
+    <table>
+      <tr>
+        <td><strong>2024</strong><br>Graduated from Cornell University with a B.S. in Computer Science.</td>
+        <td><strong>2023</strong><br>Completed internship at Bank of America in Delta One Trading.</td>
+      </tr>
+      <tr>
+        <td><strong>2022</strong><br>Participated in a data science research project at Cornell.</td>
+        <td><strong>2021</strong><br>Completed internship at a tech startup working on machine learning projects.</td>
+      </tr>
+      <tr>
+        <td><strong>2020</strong><br>Started studying Computer Science at Cornell University.</td>
+        <td><strong>2019</strong><br>High School graduation, top of class, participated in STEM competitions.</td>
+      </tr>
+    </table>
   </section>
 
-  <!-- Solutions Section -->
-  <section id="solutions">
-    <div class="container">
-      <h2>Our Solutions</h2>
-      <div class="solution-card">
-        <h3>Data Integration</h3>
-        <p>Seamless integration of disparate data sources for better analysis.</p>
-      </div>
-      <div class="solution-card">
-        <h3>Advanced Analytics</h3>
-        <p>Leverage machine learning and AI to derive insights from data.</p>
-      </div>
-      <div class="solution-card">
-        <h3>Data Security</h3>
-        <p>Ensure data privacy and security with our enterprise-grade solutions.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="submit_form.php" method="POST">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2024 Palantir Inspired. All rights reserved.</p>
-      <div class="social-media">
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://www.twitter.com" target="_blank">Twitter</a>
-      </div>
-    </div>
+    <p>Last updated: March 25, 2025</p>
   </footer>
-
-  <!-- Optional JavaScript -->
-  <script src="script.js"></script>
 </body>
 
 </html>
