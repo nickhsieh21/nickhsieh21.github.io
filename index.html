@@ -5,80 +5,360 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nick Hsieh</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
   <!-- Section 1: Landing Page -->
-  <header>
-    <div class="landing-page">
-      <a href="#landing" class="name">Nick Hsieh</a>
-      <nav class="navbar">
+  <section id="landing" class="section">
+    <nav id="navbar">
+      <div class="logo">
+        <a href="#landing">Nick Hsieh</a>
+      </div>
+      <div class="nav-links">
         <a href="#experience">Experience</a>
-        <a href="#about">About</a>
+        <a href="#about">About Me</a>
         <a href="#contact">Contact</a>
-      </nav>
-      <div class="intro">
-        <h1>Hello, I'm Nick</h1>
-        <ul>
-          <li>CS @ Cornell</li>
-          <li>Trader @ BofA</li>
-        </ul>
       </div>
-      <div class="arrow">
-        <a href="#experience">&#8595;</a>
-      </div>
+    </nav>
+    <div class="landing-content">
+      <h1>Hello, I'm <span class="accent">Nick</span></h1>
+      <ul class="highlights">
+        <li>Computer Science @ Cornell University</li>
+        <li>Incoming Trader @ Bank of America</li>
+      </ul>
     </div>
-  </header>
+    <div class="scroll-down">
+      <a href="#experience"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
 
   <!-- Section 2: Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
     <div class="timeline">
-      <div class="timeline-entry">
-        <p class="company-name">Bank of America</p>
-        <p class="title">Trader</p>
-        <p class="date">2024 - Present</p>
-        <p class="description">Trading in the Delta One Trading desk, focusing on structured products and derivatives.
-        </p>
+      <div class="timeline-item">
+        <div class="timeline-logo">
+          <img src="https://logo.clearbit.com/bankofamerica.com" alt="Bank of America Logo">
+        </div>
+        <div class="timeline-content">
+          <h3>Bank of America</h3>
+          <h4>Incoming Trading Analyst</h4>
+          <p class="date">Aug 2024 - Present</p>
+          <p class="description">I am returning full-time to the Delta One Trading desk.</p>
+          <br>
+          <h4>Sales and Trading Summer Analyst</h4>
+          <p class="date">Jun 2024 - Aug 2024</p>
+          <p class="description">Rotated across Commodities Trading, Delta One Trading, and FICC e-Trading
+            desks.</p>
+          <br>
+          <h4>Sales and Trading Sophomore Summer Analyst</h4>
+          <p class="date">Jun 2023 - Aug 2023</p>
+          <p>Rotated across Central Risk Book, Rates Options Trading, and Portfolio Trading desks.</p>
+        </div>
       </div>
-      <div class="timeline-entry">
-        <p class="company-name">Cornell University</p>
-        <p class="title">Computer Science Student</p>
-        <p class="date">2020 - 2024</p>
-        <p class="description">Studied Computer Science with minors in Operations Research, Information Science, and
-          Data Science.</p>
+      <div class="timeline-item">
+        <div class="timeline-logo">
+          <img src="https://logo.clearbit.com/cornell.edu" alt="Cornell University Logo">
+        </div>
+        <div class="timeline-content">
+          <h3>Smithbridge Asset Management</h3>
+          <h4>Summer Analyst</h4>
+          <p class="date">Jun 2022 - Aug 2022</p>
+          <p>Automated manual processes via Python scripts to increase productivity.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Section 3: About -->
-  <section id="about">
-    <h2>About</h2>
-    <p>I am an incoming trading analyst on the Delta One Trading desk at Bank of America and graduated from Cornell
-      University with a B.S. in Computer Science and minors in Operation Research, Information Science, and Data
-      Science.</p>
-    <table>
-      <tr>
-        <td><strong>2024</strong><br>Graduated from Cornell University with a B.S. in Computer Science.</td>
-        <td><strong>2023</strong><br>Completed internship at Bank of America in Delta One Trading.</td>
-      </tr>
-      <tr>
-        <td><strong>2022</strong><br>Participated in a data science research project at Cornell.</td>
-        <td><strong>2021</strong><br>Completed internship at a tech startup working on machine learning projects.</td>
-      </tr>
-      <tr>
-        <td><strong>2020</strong><br>Started studying Computer Science at Cornell University.</td>
-        <td><strong>2019</strong><br>High School graduation, top of class, participated in STEM competitions.</td>
-      </tr>
-    </table>
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="about-text">
+      I’m a Senior studying Computer Science at <a href="https://www.cornell.edu/" target="_blank"
+        class="accent">Cornell University</a> with minors in Operations Research, Information
+      Science, and Data Science. After graduation, I’ll be working as a trader on the Delta One Trading desk at
+      <a href="https://business.bofa.com/en-us/content/trading-strategy-performance.html" target="_blank"
+        class="accent">Bank of America</a>.<br>
+      <br>
+      I grew up figure skating and was a member of <a
+        href="https://usfigureskatingfanzone.com/sports/figure-skating/roster/nicholas-hsieh/446" target="_blank"
+        class="accent">Team USA</a>. Over my skating career, I medaled twice at the National
+      Championships and represented the USA at international competitions in Thailand, Belarus, and Armenia. I
+      continued competing while studying at Cornell and helped the team win Xth place overall at the National
+      Intercollegiate Final.<br>
+      <br>
+      To watch a few of my skating performances, click <a href="https://www.youtube.com/@nickhsieh1993/videos"
+        target="_blank" class="accent">here</a>.
+    </p>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="card-info">
+          <h3>2017</h3>
+          <p>My first medal at the National Championships in the Intermediate level.</p>
+        </div>
+        <div class="card-media">
+          <div class="image-placeholder"></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="card-info">
+          <h3>2018</h3>
+          <p>Novice Men's bronze medalist at the National Championships.
+          </p>
+        </div>
+        <div class="card-media">
+          <div class="image-placeholder"></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="card-info">
+          <h3>2019</h3>
+          <p>Represented the USA at the Asian Open Trophy in Bangkok, Thailand where I won 3rd place.</p>
+        </div>
+        <div class="card-media">
+          <div class="image-placeholder"></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="card-info">
+          <h3>2020</h3>
+          <p>Appeared on ABC News to promote the PYO Music Institute and talk about figure skating.</p>
+        </div>
+        <div class="card-media">
+          <div class="image-placeholder"></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="card-info">
+          <h3>2022</h3>
+          <p>Winning the gold medal in the Senior Men's event at the National Intercollegiate Final.</p>
+        </div>
+        <div class="card-media">
+          <div class="image-placeholder"></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="card-info">
+          <h3>2025</h3>
+          <p>INSERT TEXT</p>
+        </div>
+        <div class="card-media">
+          <div class="image-placeholder"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p class="about-text">Although I no longer skate competitively, I continue to apply my skating mindset to
+      various aspects of my life.
+      Whether on the trading floor or at the poker table, I enjoy competition and thrive under pressure. I combine
+      my
+      attention to detail with my drive to constantly improve in order to achieve my goals.<br>
+      <br>
+      I’m always looking for opportunities to connect and can be reached at any of the links below.
+    </p>
+  </section>
+
+  <!-- Section 4: Contact -->
+  <section id="contact" class="section-contact">
+    <div class="contact-text">
+      <p>Let's chat about <span id="typing-text"></span><span class="cursor">|</span></p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:nickhsieh21@gmail.com" target="_blank" class="contact-link">Email Me</a>
+      <a href="https://linkedin.com/in/nickhsieh21" target="_blank" class="contact-link">LinkedIn</a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>Last updated: March 25, 2025</p>
+    <p>Last updated: March 22, 2025</p>
   </footer>
+
+  <!-- Particle.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Timeline scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.timeline-item').forEach(item => {
+      observer.observe(item);
+    });
+
+    // Typewriter effect for the contact section
+    const words = ["trading", "figure skating", "poker", "aviation", "violin", "orchestra"];
+    let wordIndex = 0;
+    let letterIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+
+    function typeWriter() {
+      const currentWord = words[wordIndex];
+      const typingTextElement = document.getElementById('typing-text');
+
+      if (isDeleting) {
+        typingTextElement.textContent = currentWord.substring(0, letterIndex - 1);
+        letterIndex--;
+        typingSpeed = 50;
+      } else {
+        typingTextElement.textContent = currentWord.substring(0, letterIndex + 1);
+        letterIndex++;
+        typingSpeed = 100;
+      }
+
+      if (!isDeleting && letterIndex === currentWord.length) {
+        isDeleting = true;
+        typingSpeed = 1000; // Pause before deleting
+      } else if (isDeleting && letterIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typingSpeed = 500; // Pause before typing next word
+      }
+
+      setTimeout(typeWriter, typingSpeed);
+    }
+
+    // Particles.js configuration
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#003459"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#00171f"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 4,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#5c88da",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 180,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 200,
+            "size": 8,
+            "duration": 2,
+            "opacity": 0.8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 100,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+    // Make sure particles are initialized when the window loads
+    window.addEventListener('load', function () {
+      // Start the typewriter effect
+      typeWriter();
+
+      // Make sure all timeline items are observed for animations
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        observer.observe(item);
+      });
+    });
+  </script>
 </body>
 
 </html>
