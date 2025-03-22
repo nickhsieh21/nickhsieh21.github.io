@@ -604,6 +604,10 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  #landing {
+    background: white;
+  }
+
   .logo a {
     font-size: 1.1rem;
   }
@@ -641,7 +645,7 @@ footer {
   }
 
   .timeline-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .timeline-content h4 {
