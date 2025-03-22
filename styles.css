@@ -593,7 +593,6 @@ nav.scrolled {
 /* Footer */
 footer {
   padding: 20px 5%;
-  position: fixed;
   background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
   color: white;
 }
