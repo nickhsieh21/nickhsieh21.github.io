@@ -299,7 +299,7 @@ nav.scrolled {
 .timeline-item {
   position: relative;
   margin-bottom: 50px;
-  padding-left: 100px;
+  padding-left: 75px;
   padding-right: 10%;
   opacity: 0;
   transform: translateX(30px);
@@ -593,6 +593,7 @@ nav.scrolled {
 /* Footer */
 footer {
   padding: 20px 5%;
+  position: fixed;
   background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
   color: white;
 }
