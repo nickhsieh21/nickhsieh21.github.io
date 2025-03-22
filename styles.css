@@ -64,7 +64,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 5%;
+  padding: 20px 5%;
   position: fixed;
   top: 0;
   left: 0;
@@ -215,6 +215,10 @@ nav.scrolled {
   opacity: 0;
   animation: fadeIn 1s forwards 1s, bounce 2s infinite 1.5s;
   z-index: 2;
+}
+
+.scroll-down:hover {
+  color: var(--accent-color);
 }
 
 @keyframes fadeInUp {
@@ -612,15 +616,31 @@ footer {
   }
 
   .timeline:before {
-    left: 15px;
+    left: 30px;
   }
 
   .timeline-item {
-    padding-left: 45px;
+    padding-left: 75px;
   }
 
   .timeline-logo {
-    left: -6px;
+    left: -50px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1rem;
+  }
+
+  .timeline-content .date {
+    font-size: 0.8rem;
+  }
+
+  .timeline-content .description {
+    font-size: 0.9rem;
   }
 
   .contact-text {
@@ -650,7 +670,7 @@ footer {
 #particles-js {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 95%;
   top: 0;
   left: 50%;
   z-index: -1;
