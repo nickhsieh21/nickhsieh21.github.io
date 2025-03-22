@@ -599,16 +599,29 @@ footer {
   padding: 20px 5%;
   background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
   color: white;
+  font-size: 1rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .logo a {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
   .landing-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .highlights li {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  #experience h2 {
+    font-size: 2.5rem;
   }
 
   .timeline {
@@ -628,7 +641,7 @@ footer {
   }
 
   .timeline-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .timeline-content h4 {
@@ -652,6 +665,14 @@ footer {
     gap: 15px;
   }
 
+  #about h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
   }
@@ -660,9 +681,21 @@ footer {
     flex-direction: column;
   }
 
+  .card-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-info p {
+    font-size: 0.9rem;
+  }
+
   .card-media {
     width: 100%;
     padding: 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }
 
