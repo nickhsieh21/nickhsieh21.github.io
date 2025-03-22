@@ -604,10 +604,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  #landing {
-    background: white;
-  }
-
   .logo a {
     font-size: 1.1rem;
   }
@@ -638,6 +634,7 @@ footer {
 
   .timeline-item {
     padding-left: 75px;
+    padding-right: 0%;
   }
 
   .timeline-logo {
