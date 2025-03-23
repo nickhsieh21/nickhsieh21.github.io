@@ -54,12 +54,15 @@
           <br>
           <h4>Sales and Trading Summer Analyst</h4>
           <p class="date">Jun 2024 - Aug 2024</p>
-          <p class="description">Rotated across Commodities Trading, Delta One Trading, and FICC e-Trading
-            desks.</p>
+          <p class="description">Developed FX trading algorithm that outperformed benchmark by 150% over 5 years.
+            Researched mean reversion trading strategy between IGIB and its underlying bonds.</p>
           <br>
           <h4>Sales and Trading Sophomore Summer Analyst</h4>
           <p class="date">Jun 2023 - Aug 2023</p>
-          <p class="description">Rotated across Central Risk Book, Rates Options Trading, and Portfolio Trading desks.
+          <p class="description">Built trade pricer using historical intraday volume, bid-ask spread, and
+            price data. <br>
+            Wrote functions to clean and analyze dividend data for the index rebalance team's
+            prediction script.
           </p>
         </div>
       </div>
@@ -104,7 +107,8 @@
           <p>My first medal at the National Championships in the Intermediate level.</p>
         </div>
         <div class="card-media">
-          <img src="images/intermediate2017.png"></img>
+          <img src="images/intermediate2017.png"
+            alt="My first medal at the National Championships in the Intermediate level."></img>
         </div>
       </div>
       <div class="about-card">
@@ -114,7 +118,7 @@
           </p>
         </div>
         <div class="card-media">
-          <img src="images/novice2018.png"></img>
+          <img src="images/novice2018.png" alt="Novice Men's bronze medalist at the National Championships."></img>
         </div>
       </div>
       <div class="about-card">
@@ -123,7 +127,8 @@
           <p>Represented the USA at the Asian Open Trophy in Bangkok, Thailand where I won 3rd place.</p>
         </div>
         <div class="card-media">
-          <img src="images/asianopen2018.png"></img>
+          <img src="images/asianopen2018.png"
+            src="Represented the USA at the Asian Open Trophy in Bangkok, Thailand where I won 3rd place."></img>
         </div>
       </div>
       <div class="about-card">
@@ -133,8 +138,8 @@
         </div>
         <div class="card-media">
           <a href="https://www.youtube.com/watch?v=wuC_CD42D7A&ab_channel=NickHsieh" target="_blank"><img
-              src="images/phl17.png"></a>
-          <!-- <img src="images/phl17.png"></img> -->
+              src="images/phl17.png"
+              alt="Appeared on PHL17 News to promote the PYO Music Institute and talk about figure skating."></a>
         </div>
       </div>
       <div class="about-card">
@@ -143,7 +148,8 @@
           <p>Won the gold medal at the National Intercollegiate Final in the Senior Men's event.</p>
         </div>
         <div class="card-media">
-          <img src="images/NIF2023.png"></img>
+          <img src="images/NIF2023.png"
+            alt="Won the gold medal at the National Intercollegiate Final in the Senior Men's event."></img>
         </div>
       </div>
       <div class="about-card">
@@ -211,6 +217,20 @@
       observer.observe(item);
     });
 
+    // About Card Scroll Animation
+    const aboutObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.about-card').forEach(card => {
+      aboutObserver.observe(card);
+    });
+
+
     // Typewriter effect for the contact section
     const words = ["trading", "figure skating", "poker", "aviation", "violin", "orchestra"];
     let wordIndex = 0;
@@ -243,6 +263,11 @@
 
       setTimeout(typeWriter, typingSpeed);
     }
+
+    window.addEventListener('load', function () {
+      // Start the typewriter effect
+      typeWriter();
+    });
 
     // Particles.js configuration
     particlesJS('particles-js', {
@@ -349,17 +374,6 @@
         }
       },
       "retina_detect": true
-    });
-
-    // Make sure particles are initialized when the window loads
-    window.addEventListener('load', function () {
-      // Start the typewriter effect
-      typeWriter();
-
-      // Make sure all timeline items are observed for animations
-      document.querySelectorAll('.timeline-item').forEach(item => {
-        observer.observe(item);
-      });
     });
   </script>
 </body>
