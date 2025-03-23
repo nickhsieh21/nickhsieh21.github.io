@@ -450,6 +450,7 @@ nav.scrolled {
 .card-info p {
   font-size: 1.1rem;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .card-info a {
@@ -470,7 +471,7 @@ nav.scrolled {
 .card-media img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
   transition: transform var(--animation-duration);
@@ -576,7 +577,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .logo a {
     font-size: 1.1rem;
   }
@@ -667,6 +668,10 @@ footer {
 
   .card-info p {
     font-size: 0.9rem;
+  }
+
+  .card-info a {
+    font-size: 0.8rem;
   }
 
   .card-media {
