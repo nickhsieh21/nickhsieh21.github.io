@@ -42,7 +42,7 @@ a {
   color: inherit;
 }
 
-ul {
+#landing ul {
   list-style: none;
 }
 
@@ -351,6 +351,10 @@ nav.scrolled {
   font-size: 1.1rem;
 }
 
+#experience .description li {
+  margin-left: 1.25rem;
+}
+
 /* About Section */
 #about {
   background-color: var(--light-bg);
@@ -382,7 +386,7 @@ nav.scrolled {
 
 .about-text {
   font-size: 1.2rem;
-  max-width: 1050px;
+  max-width: 1100px;
   margin-bottom: 40px;
   line-height: 1.8;
 }
