@@ -146,7 +146,7 @@ nav.scrolled {
 .landing-content {
   margin-top: 60px;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .landing-content h1 {
@@ -183,7 +183,7 @@ nav.scrolled {
   color: var(--primary-color);
   opacity: 0;
   animation: fadeIn 1s forwards 1s, bounce 2s infinite 1.5s;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .scroll-down:hover {
@@ -222,14 +222,14 @@ nav.scrolled {
   }
 }
 
-/* Experience Section */
-#experience {
-  background-color: var(--card-bg);
+/* About Section */
+#about {
+  background-color: rgb(250, 252, 255);
   position: relative;
   overflow: hidden;
 }
 
-#experience::before {
+/* #about::before {
   content: '';
   position: absolute;
   top: 0;
@@ -237,14 +237,145 @@ nav.scrolled {
   width: 100%;
   height: 100%;
   background: linear-gradient(45deg, rgba(42, 63, 95, 0.03) 0%, rgba(92, 136, 218, 0.03) 100%);
-  z-index: 0;
+  z-index: -1;
+} */
+
+#about h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  max-width: 1100px;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  z-index: 1
+}
+
+#about a:hover,
+#about a:hover {
+  text-decoration: underline;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background-color: var(--card-bg);
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.8s;
+}
+
+.about-card.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-info {
+  padding: 25px;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-info::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(var(--accent-color), transparent 70%);
+  opacity: 0.1;
+}
+
+.card-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.card-info p {
+  font-size: 1.1rem;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.card-info a {
+  position: absolute;
+  bottom: 10%;
+}
+
+.card-media {
+  width: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform var(--animation-duration);
+}
+
+.card-media:hover img {
+  transform: scale(1.05);
+}
+
+/* Experience Section */
+#experience {
+  background-color: var(--light-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+#experience::before {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(42, 63, 95, 0.03) 0%, rgba(92, 136, 218, 0.03) 100%);
+  opacity: 0.05;
 }
 
 #experience h2 {
   font-size: 3rem;
   margin-bottom: 50px;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
   -webkit-background-clip: text;
   background-clip: text;
@@ -255,7 +386,7 @@ nav.scrolled {
 .timeline {
   position: relative;
   padding-left: 10%;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .timeline:before {
@@ -355,136 +486,6 @@ nav.scrolled {
   margin-left: 1.25rem;
 }
 
-/* About Section */
-#about {
-  background-color: var(--light-bg);
-  position: relative;
-  overflow: hidden;
-}
-
-#about::before {
-  content: '';
-  position: absolute;
-  bottom: -200px;
-  left: -200px;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: radial-gradient(var(--primary-color), transparent 70%);
-  opacity: 0.05;
-}
-
-#about h2 {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  display: inline-block;
-}
-
-.about-text {
-  font-size: 1.2rem;
-  max-width: 1100px;
-  margin-bottom: 40px;
-  line-height: 1.8;
-}
-
-#about .blue-accent:hover,
-#about .grey-accent:hover {
-  text-decoration: underline;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.about-card {
-  display: flex;
-  flex-direction: row;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  background-color: var(--card-bg);
-  opacity: 0;
-  transform: translateX(30px);
-  transition: all 0.8s;
-}
-
-.about-card.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.card-info {
-  padding: 25px;
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-
-.card-info::before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: radial-gradient(var(--accent-color), transparent 70%);
-  opacity: 0.1;
-}
-
-.card-info h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: var(--primary-color);
-  position: relative;
-}
-
-.card-info p {
-  font-size: 1.1rem;
-  position: relative;
-  padding-bottom: 50px;
-}
-
-.card-info a {
-  position: absolute;
-  bottom: 10%;
-}
-
-.card-media {
-  width: 50%;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.card-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 8px;
-  transition: transform var(--animation-duration);
-}
-
-.card-media:hover img {
-  transform: scale(1.05);
-}
-
 /* Contact Section */
 #contact {
   background-color: var(--card-bg);
@@ -548,7 +549,7 @@ nav.scrolled {
   transition: all var(--animation-duration);
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .contact-link::before {
